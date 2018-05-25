@@ -1,0 +1,21 @@
+<form>
+  <div class="form-group">
+    <label class="control-label">
+      Titulo
+    </label>
+    <input type="text" class="form-control" placeholder="Digite o titulo" [(ngModel)]="titulo" name="titulo">
+  </div>
+
+  <div class="form-group">
+    <label class="control-label">
+      Descrição
+    </label>
+    <input type="text" class="form-control" placeholder="Digite a Descriçao" [(ngModel)]="descricao" name="descricao">
+  </div>
+  <button (click)="enviarItem(item);" class="btn btn-success">
+    <span>Submeter</span>
+  </button>
+  <button (click)="cancelar();" class="btn btn-default">
+    <span>Cancelar</span>
+  </button>
+</form>
